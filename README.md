@@ -1,10 +1,9 @@
 # vue-scroll-progressbar
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/guillaumebriday)
-![](https://img.shields.io/npm/dt/vue-scroll-progressbar.svg)
-![](https://img.shields.io/npm/v/vue-scroll-progressbar.svg)
-![](https://img.shields.io/github/license/guillaumebriday/vue-scroll-progressbar.svg)
-
+[![](https://img.shields.io/npm/dt/vue-scroll-progressbar.svg)](https://www.npmjs.com/package/vue-scroll-progressbar)
+[![](https://img.shields.io/npm/v/vue-scroll-progressbar.svg)](https://www.npmjs.com/package/vue-scroll-progressbar)
+[![](https://img.shields.io/github/license/guillaumebriday/vue-scroll-progressbar.svg)](https://github.com/guillaumebriday/vue-scroll-progressbar)
 
 ## Getting started
 
