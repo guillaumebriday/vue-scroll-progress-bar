@@ -57,7 +57,7 @@ Vue.component("vue-scroll-progress-bar", VueScrollProgressBar)
 ## Events
 
 |key|description|
-|:---|---|---|
+|:---|---|
 | `begin`|When scroll reached 0%|
 |`complete`|When scroll reached 100%|
 
