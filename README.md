@@ -22,7 +22,7 @@ $ yarn add vue-scroll-progressbar
 Install the plugin into Vue:
 ```js
 import Vue from 'vue'
-import VueScrollProgressBar from 'VueScrollProgressBar'
+import VueScrollProgressBar from 'vue-scroll-progressbar'
 
 Vue.use(VueScrollProgressBar)
 ```
@@ -31,7 +31,7 @@ Or use the component directly:
 
 ```js
 import Vue from 'vue'
-import VueScrollProgressBar from 'VueScrollProgressBar'
+import VueScrollProgressBar from 'vue-scroll-progressbar'
 
 Vue.component("vue-scroll-progress-bar", VueScrollProgressBar)
 ```
