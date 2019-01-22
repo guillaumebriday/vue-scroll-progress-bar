@@ -52,7 +52,23 @@ Vue.component("vue-scroll-progress-bar", VueScrollProgressBar)
 |:---|---|---|
 | `height`|Height of the progress bar|`'.5rem'`|
 |`backgroundColor`|Background property of the progress bar|`'linear-gradient(to right, #38C172, #51D88A)'`|
+|`barClass`|Class attribute of the progress bar|`'{}'`|
 |`containerColor`|Background property of the progress bar container|`'transparent'`|
+|`zIndex`|z-index property of the progress bar container|`'50'`|
+|`containerClass`|Class attribute of the progress bar container|`'{"progress-bar-container--container": true}'`|
+
+With :
+
+```css
+.progress-bar-container--container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+```
+
+`containerClass` must be used to override the `.progress-bar-container--container` default class. You can use the default `:class` syntax on the component to add classes if needed.
 
 ## Events
 
@@ -65,27 +81,28 @@ Vue.component("vue-scroll-progress-bar", VueScrollProgressBar)
 
 ## Project setup
 ```
-yarn install
+$ cd examples
+$ yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+$ yarn run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+$ yarn run build
 ```
 
 ### Run your tests
 ```
-yarn run test
+$ yarn run test
 ```
 
 ### Lints and fixes files
 ```
-yarn run lint
+$ yarn run lint
 ```
 
 ## Contributing

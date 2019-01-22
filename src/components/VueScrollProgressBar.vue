@@ -1,9 +1,13 @@
 <template>
   <div
-    class="progress-bar-container--container"
-    :style="{ background: containerColor }"
+    :class="containerClass"
+    :style="{
+      background: containerColor,
+      zIndex: zIndex
+    }"
   >
     <div
+      :class="barClass"
       :style="{
         width: `${width}%`,
         height: height,
@@ -23,6 +27,11 @@ export default {
       default: ".5rem"
     },
 
+    zIndex: {
+      type: String,
+      default: "50"
+    },
+
     backgroundColor: {
       type: String,
       default: "linear-gradient(to right, #38C172, #51D88A)"
@@ -31,6 +40,20 @@ export default {
     containerColor: {
       type: String,
       default: "transparent"
+    },
+
+    barClass: {
+      type: Object,
+      default: () => {}
+    },
+
+    containerClass: {
+      type: Object,
+      default: () => {
+        return {
+          'progress-bar-container--container': true
+        }
+      }
     }
   },
 
