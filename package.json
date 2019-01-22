@@ -1,6 +1,8 @@
 {
   "name": "vue-scroll-progressbar",
-  "version": "0.1.0",
+  "description": "Vue.js plugin for page scroll progress bar",
+  "author": "Guillaume Briday <guillaumebriday@gmail.com>",
+  "version": "0.1.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -18,5 +20,7 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "homepage": "https://github.com/guillaumebriday/vue-scroll-progressbar",
+  "license": "MIT"
 }
