@@ -10,25 +10,10 @@
 
       <ul>
         <li>
-          <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
+          <a href="https://github.com/guillaumebriday/vue-scroll-progressbar" target="_blank" rel="noopener">Github</a>
         </li>
         <li>
-          <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-            >Forum</a
-          >
-        </li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-            >Community Chat</a
-          >
-        </li>
-        <li>
-          <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-            >Twitter</a
-          >
-        </li>
-        <li>
-          <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
+          <a href="https://www.npmjs.com/package/vue-scroll-progressbar" target="_blank" rel="noopener">Npm</a>
         </li>
       </ul>
     </div>
