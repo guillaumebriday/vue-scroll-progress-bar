@@ -4,6 +4,7 @@
 [![](https://img.shields.io/npm/dt/vue-scroll-progressbar.svg)](https://www.npmjs.com/package/vue-scroll-progressbar)
 [![](https://img.shields.io/npm/v/vue-scroll-progressbar.svg)](https://www.npmjs.com/package/vue-scroll-progressbar)
 [![](https://img.shields.io/github/license/guillaumebriday/vue-scroll-progressbar.svg)](https://github.com/guillaumebriday/vue-scroll-progressbar)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/63086bf9-f804-451e-9319-052191432063/deploy-status)](https://app.netlify.com/sites/vue-scroll-progressbar/deploys)
 
 ## Getting started
 
