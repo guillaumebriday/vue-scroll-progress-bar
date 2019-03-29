@@ -1,29 +1,29 @@
-# vue-scroll-progressbar
+# vue-scroll-progress-bar
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/guillaumebriday)
-[![](https://img.shields.io/npm/dt/vue-scroll-progressbar.svg)](https://www.npmjs.com/package/vue-scroll-progressbar)
-[![](https://img.shields.io/npm/v/vue-scroll-progressbar.svg)](https://www.npmjs.com/package/vue-scroll-progressbar)
-[![](https://img.shields.io/github/license/guillaumebriday/vue-scroll-progressbar.svg)](https://github.com/guillaumebriday/vue-scroll-progressbar)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/63086bf9-f804-451e-9319-052191432063/deploy-status)](https://app.netlify.com/sites/vue-scroll-progressbar/deploys)
+[![](https://img.shields.io/npm/dt/vue-scroll-progress-bar.svg)](https://www.npmjs.com/package/vue-scroll-progress-bar)
+[![](https://img.shields.io/npm/v/vue-scroll-progress-bar.svg)](https://www.npmjs.com/package/vue-scroll-progress-bar)
+[![](https://img.shields.io/github/license/guillaumebriday/vue-scroll-progress-bar.svg)](https://github.com/guillaumebriday/vue-scroll-progress-bar)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/63086bf9-f804-451e-9319-052191432063/deploy-status)](https://app.netlify.com/sites/vue-scroll-progress-bar/deploys)
 
 ## Getting started
 
 ## Install
 
 ```bash
-$ npm install vue-scroll-progressbar --save
+$ npm install vue-scroll-progress-bar --save
 ```
 
 or
 
 ```bash
-$ yarn add vue-scroll-progressbar
+$ yarn add vue-scroll-progress-bar
 ```
 
 Install the plugin into Vue:
 ```js
 import Vue from 'vue'
-import VueScrollProgressBar from 'vue-scroll-progressbar'
+import VueScrollProgressBar from 'vue-scroll-progress-bar'
 
 Vue.use(VueScrollProgressBar)
 ```
@@ -32,7 +32,7 @@ Or use the component directly:
 
 ```js
 import Vue from 'vue'
-import VueScrollProgressBar from 'vue-scroll-progressbar'
+import VueScrollProgressBar from 'vue-scroll-progress-bar'
 
 Vue.component("vue-scroll-progress-bar", VueScrollProgressBar)
 ```

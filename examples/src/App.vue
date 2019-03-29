@@ -10,10 +10,10 @@
 
       <ul>
         <li>
-          <a href="https://github.com/guillaumebriday/vue-scroll-progressbar" target="_blank" rel="noopener">Github</a>
+          <a href="https://github.com/guillaumebriday/vue-scroll-progress-bar" target="_blank" rel="noopener">Github</a>
         </li>
         <li>
-          <a href="https://www.npmjs.com/package/vue-scroll-progressbar" target="_blank" rel="noopener">Npm</a>
+          <a href="https://www.npmjs.com/package/vue-scroll-progress-bar" target="_blank" rel="noopener">Npm</a>
         </li>
       </ul>
     </div>
