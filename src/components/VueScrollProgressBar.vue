@@ -5,6 +5,7 @@
       background: containerColor,
       zIndex: zIndex
     }"
+    @click="onClick($event)"
   >
     <div
       :class="barClass"
@@ -54,6 +55,11 @@ export default {
           'progress-bar-container--container': true
         }
       }
+    },
+
+    onClick: {
+      type: Function,
+      default: () => {}
     }
   },
 
