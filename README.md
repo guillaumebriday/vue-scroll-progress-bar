@@ -71,6 +71,12 @@ With :
 
 `containerClass` must be used to override the `.progress-bar-container--container` default class. You can use the default `:class` syntax on the component to add classes if needed.
 
+## Methods
+
+| key     | description             | type   |function property|
+|:--------|-------------------------|--------|-----------------|
+|`onClick`|When clicked on scrollbar|Function| event object    |
+
 ## Events
 
 |key|description|
