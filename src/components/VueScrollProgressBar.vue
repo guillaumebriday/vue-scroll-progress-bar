@@ -69,6 +69,10 @@ export default {
       this.width = (window.scrollY / height) * 100
       const eventWidth = Math.ceil(this.width)
 
+      if (this.emitUpdate) {
+        this.$emit("update", eventWidth)
+      }
+
       if (eventWidth === 0) {
         this.$emit("begin")
       }
@@ -76,6 +80,12 @@ export default {
       if (eventWidth === 100) {
         this.$emit("complete")
       }
+    }
+  },
+
+  computed: {
+    emitUpdate () {
+      return Object.keys(this.$listeners).includes('update')
     }
   },
 
