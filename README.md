@@ -73,10 +73,11 @@ With :
 
 ## Events
 
-|key|description|
-|:---|---|
-| `begin`|When scroll reached 0%|
-|`complete`|When scroll reached 100%|
+| key      | event condition     | return value            |
+|:---------|---------------------|-------------------------|
+| `begin`  | Scroll reached 0%   | –                       |
+|`complete`| Scroll reached 100% | –                       |
+|`update`  | Every scroll event  | Scroll position (0-100) |
 
 ## Develop
 
