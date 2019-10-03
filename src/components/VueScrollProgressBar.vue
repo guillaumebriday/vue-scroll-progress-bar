@@ -80,11 +80,13 @@ export default {
   },
 
   mounted() {
+    window.addEventListener("resize", this.handleScroll)
     window.addEventListener("scroll", this.handleScroll)
     window.dispatchEvent(new Event("scroll"))
   },
 
   destroyed() {
+    window.addEventListener("resize", this.handleScroll)
     window.removeEventListener("scroll", this.handleScroll)
   }
 }
