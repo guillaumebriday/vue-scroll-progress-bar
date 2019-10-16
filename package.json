@@ -1,6 +1,6 @@
 {
   "name": "@guillaumebriday/vue-scroll-progress-bar",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Vue.js plugin for page scroll progress bar",
   "author": "Guillaume Briday <guillaumebriday@gmail.com>",
   "scripts": {
