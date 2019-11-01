@@ -5,6 +5,7 @@
       background: containerColor,
       zIndex: zIndex
     }"
+    @click="onClick($event)"
   >
     <div
       :class="barClass"
@@ -54,6 +55,11 @@ export default {
           'progress-bar-container--container': true
         }
       }
+    },
+
+    onClick: {
+      type: Function,
+      default: () => {}
     }
   },
 
@@ -69,6 +75,10 @@ export default {
       this.width = (window.scrollY / height) * 100
       const eventWidth = Math.ceil(this.width)
 
+      if (this.emitUpdate) {
+        this.$emit("update", eventWidth)
+      }
+
       if (eventWidth === 0) {
         this.$emit("begin")
       }
@@ -79,12 +89,20 @@ export default {
     }
   },
 
+  computed: {
+    emitUpdate () {
+      return Object.keys(this.$listeners).includes('update')
+    }
+  },
+
   mounted() {
+    window.addEventListener("resize", this.handleScroll)
     window.addEventListener("scroll", this.handleScroll)
     window.dispatchEvent(new Event("scroll"))
   },
 
   destroyed() {
+    window.addEventListener("resize", this.handleScroll)
     window.removeEventListener("scroll", this.handleScroll)
   }
 }
