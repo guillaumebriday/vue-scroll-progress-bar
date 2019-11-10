@@ -31,19 +31,22 @@ Vue.use(VueScrollProgressBar)
 Or use the component directly:
 
 ```js
-import Vue from 'vue'
 import { VueScrollProgressBar } from '@guillaumebriday/vue-scroll-progress-bar'
 
-Vue.component("vue-scroll-progress-bar", VueScrollProgressBar)
+export default {
+  components: {
+    VueScrollProgressBar
+  },
+
+  // ...
+}
 ```
 
 ## Basic Usage
 
 ```html
 <template>
-  <div id="app">
-    <vue-scroll-progress-bar @complete="handleComplete" height="2rem" />
-  </div>
+  <vue-scroll-progress-bar @complete="handleComplete" height="2rem" />
 </template>
 ```
 
@@ -81,28 +84,21 @@ With :
 ## Develop
 
 ## Project setup
-```
-$ cd examples
+```bash
 $ yarn install
+$ yarn build -w
 ```
 
-### Compiles and hot-reloads for development
-```
-$ yarn run serve
-```
+## Open example app
 
-### Compiles and minifies for production
-```
-$ yarn run build
-```
-
-### Run your tests
-```
-$ yarn run test
+```bash
+$ cd example
+$ yarn
+$ yarn serve
 ```
 
 ### Lints and fixes files
-```
+```bash
 $ yarn run lint
 ```
 
