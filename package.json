@@ -7,9 +7,12 @@
   "module": "dist/vue-scroll-progress-bar.es.js",
   "unpkg": "dist/vue-scroll-progress-bar.min.js",
   "scripts": {
-    "build": "BABEL_ENV=build rollup -c",
+    "build:browser": "rollup -c build/rollup.config.browser.js",
+    "build:es": "rollup -c build/rollup.config.es.js",
+    "build:umd": "rollup -c build/rollup.config.umd.js",
+    "build": "yarn build:browser && yarn build:es && yarn build:umd",
     "prepublishOnly": "yarn build",
-    "lint": "eslint --ext .js --ignore-path .gitignore src/ --fix"
+    "lint": "eslint --ext .js --ignore-path .gitignore build/ src/ --fix"
   },
   "dependencies": {},
   "devDependencies": {

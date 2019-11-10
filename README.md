@@ -86,7 +86,7 @@ With :
 ## Project setup
 ```bash
 $ yarn install
-$ yarn build -w
+$ yarn build
 ```
 
 ## Open example app
