@@ -32,7 +32,7 @@ Or use the component directly:
 
 ```js
 import Vue from 'vue'
-import VueScrollProgressBar from '@guillaumebriday/vue-scroll-progress-bar'
+import { VueScrollProgressBar } from '@guillaumebriday/vue-scroll-progress-bar'
 
 Vue.component("vue-scroll-progress-bar", VueScrollProgressBar)
 ```

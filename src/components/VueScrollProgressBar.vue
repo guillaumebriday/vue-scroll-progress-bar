@@ -13,33 +13,33 @@
         height: height,
         background: backgroundColor
       }"
-    ></div>
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "VueScrollProgressBar",
+  name: 'VueScrollProgressBar',
 
   props: {
     height: {
       type: String,
-      default: ".5rem"
+      default: '.5rem'
     },
 
     zIndex: {
       type: String,
-      default: "50"
+      default: '50'
     },
 
     backgroundColor: {
       type: String,
-      default: "linear-gradient(to right, #38C172, #51D88A)"
+      default: 'linear-gradient(to right, #38C172, #51D88A)'
     },
 
     containerColor: {
       type: String,
-      default: "transparent"
+      default: 'transparent'
     },
 
     barClass: {
@@ -57,35 +57,35 @@ export default {
     }
   },
 
-  data() {
+  data () {
     return {
       width: 0
     }
   },
 
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+    window.dispatchEvent(new Event('scroll'))
+  },
+
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+
   methods: {
-    handleScroll() {
+    handleScroll () {
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
       this.width = (window.scrollY / height) * 100
       const eventWidth = Math.ceil(this.width)
 
       if (eventWidth === 0) {
-        this.$emit("begin")
+        this.$emit('begin')
       }
 
       if (eventWidth === 100) {
-        this.$emit("complete")
+        this.$emit('complete')
       }
     }
-  },
-
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll)
-    window.dispatchEvent(new Event("scroll"))
-  },
-
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll)
   }
 }
 </script>

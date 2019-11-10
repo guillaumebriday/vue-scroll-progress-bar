@@ -3,25 +3,35 @@
   "version": "0.3.0",
   "description": "Vue.js plugin for page scroll progress bar",
   "author": "Guillaume Briday <guillaumebriday@gmail.com>",
+  "main": "dist/vue-scroll-progress-bar.umd.js",
+  "module": "dist/vue-scroll-progress-bar.es.js",
+  "unpkg": "dist/vue-scroll-progress-bar.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "BABEL_ENV=build rollup -c",
+    "prepublishOnly": "yarn build",
+    "lint": "eslint --ext .js --ignore-path .gitignore src/ --fix"
   },
-  "main": "src/index.js",
   "dependencies": {
-    "core-js": "^3.1.2",
-    "vue": "^2.6.10"
+    "core-js": "^3.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "4.0.4",
-    "@vue/cli-plugin-eslint": "4.0.4",
-    "@vue/cli-service": "4.0.4",
-    "@vue/eslint-config-prettier": "5.0.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
     "babel-eslint": "10.0.3",
-    "eslint": "6.6.0",
-    "eslint-plugin-vue": "5.2.3",
-    "vue-template-compiler": "2.6.10"
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.0.0",
+    "rollup": "^1.26.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-vue": "^5.1.2",
+    "vue-template-compiler": "^2.6.10"
   },
   "homepage": "https://github.com/guillaumebriday/vue-scroll-progress-bar",
   "license": "MIT"
