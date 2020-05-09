@@ -12,7 +12,7 @@
     "build:umd": "rollup -c build/rollup.config.umd.js",
     "build": "yarn build:browser && yarn build:es && yarn build:umd",
     "prepublishOnly": "yarn build",
-    "lint": "eslint --ext .js --ignore-path .gitignore build/ src/ --fix"
+    "lint": "eslint --ext .js --ignore-path .gitignore build/ src/"
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,6 +1,7 @@
 # vue-scroll-progress-bar
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/guillaumebriday)
+![](https://github.com/guillaumebriday/vue-scroll-progress-bar/workflows/Lint/badge.svg)
 [![](https://img.shields.io/npm/dt/@guillaumebriday/vue-scroll-progress-bar.svg)](https://www.npmjs.com/package/@guillaumebriday/vue-scroll-progress-bar)
 [![](https://img.shields.io/npm/v/@guillaumebriday/vue-scroll-progress-bar.svg)](https://www.npmjs.com/package/@guillaumebriday/vue-scroll-progress-bar)
 [![](https://img.shields.io/github/license/guillaumebriday/vue-scroll-progress-bar.svg)](https://github.com/guillaumebriday/vue-scroll-progress-bar)
@@ -83,13 +84,13 @@ With :
 
 ## Develop
 
-## Project setup
+### Project setup
 ```bash
 $ yarn install
 $ yarn build
 ```
 
-## Open example app
+### Open example app
 
 ```bash
 $ cd example
@@ -97,9 +98,9 @@ $ yarn
 $ yarn serve
 ```
 
-### Lints and fixes files
+### Lint files
 ```bash
-$ yarn run lint
+$ yarn lint
 ```
 
 ## Contributing
