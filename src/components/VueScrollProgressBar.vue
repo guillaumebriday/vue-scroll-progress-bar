@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import throttle from 'lodash.throttle'
+
 export default {
   name: 'VueScrollProgressBar',
 
@@ -78,7 +80,7 @@ export default {
       window.removeEventListener('test', null, options)
     } catch (error) {}
 
-    window.addEventListener('scroll', this.handleScroll, passiveIfSupported)
+    window.addEventListener('scroll', throttle(this.handleScroll, 15), passiveIfSupported)
     window.dispatchEvent(new Event('scroll'))
   },
 
