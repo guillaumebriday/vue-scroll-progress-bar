@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.4.0",
     "highlight.js": "^9.16.2",
+    "lodash.throttle": "^4.1.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
