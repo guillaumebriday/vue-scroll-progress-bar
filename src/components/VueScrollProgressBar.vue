@@ -64,7 +64,21 @@ export default {
   },
 
   mounted () {
-    window.addEventListener('scroll', this.handleScroll)
+    let passiveIfSupported = false
+
+    try {
+      const options = {
+        get passive () {
+          passiveIfSupported = { passive: true }
+          return false
+        }
+      }
+
+      window.addEventListener('test', null, options)
+      window.removeEventListener('test', null, options)
+    } catch (error) {}
+
+    window.addEventListener('scroll', this.handleScroll, passiveIfSupported)
     window.dispatchEvent(new Event('scroll'))
   },
 
